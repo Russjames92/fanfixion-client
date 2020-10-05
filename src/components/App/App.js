@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom'
+import PrivateRoute from '../Utils/PrivateRoute'
+import EpisodeFeed from '../EpisodeFeed/EpisodeFeed'
+import LandingPage from "../LandingPage/LandingPage"
 
 class App extends Component {
   state = {}
@@ -9,7 +13,14 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <p>Hello World!</p>
+        <Route>
+          path={'/'}
+          component={LandingPage}
+        </Route>
+        <PrivateRoute
+          path={'/episodes'}
+          component={EpisodeFeed}
+        />
       </div>
     )
   }
