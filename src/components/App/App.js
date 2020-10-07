@@ -1,26 +1,30 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom'
-import PrivateRoute from '../Utils/PrivateRoute'
-import EpisodeFeed from '../EpisodeFeed/EpisodeFeed'
-import LandingPage from "../LandingPage/LandingPage"
+import { Route, Switch } from 'react-router-dom'
+import EpisodeListContext from '../../contexts/EpisodeListContext'
+// import PrivateRoute from '../Utils/PrivateRoute'
+// import PublicOnlyRoute from '../Utils/PublicOnlyRoute'
+import EpisodeListPage from '../../routes/EpisodeListPage/EpisodeListPage'
+// import './App.css'
 
 class App extends Component {
-  state = {}
+  state = { hasError: false }
 
-  // static error function
-  // {}
+  static contextType = EpisodeListContext
+
+  static getDerivedStateFromError(error) {
+    console.error(error)
+    return { hasError: true }
+  }
 
   render() {
     return (
       <div className='App'>
-        <Route
-          path={'/'}
-          component={LandingPage}
-        />
-        <PrivateRoute
-          path={'/episodes'}
-          component={EpisodeFeed}
-        />
+        <Switch>
+          <Route
+            path={'/'}
+            component={EpisodeListPage}
+          />
+        </Switch>
       </div>
     )
   }
