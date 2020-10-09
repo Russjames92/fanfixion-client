@@ -16,11 +16,8 @@ export class EpisodeListProvider extends Component {
     };
 
     setEpisodeList = episodeList => {
-        console.log('setEpisodeList is called', episodeList)
-        this.setState({ episodeList }, () => {
-            console.log('state from context', this.state)
-        })
-
+        // console.log('setEpisodeList is called', episodeList)
+        this.setState({ episodeList })
     }
 
     setError = error => {

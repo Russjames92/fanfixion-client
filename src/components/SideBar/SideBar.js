@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import userIcon from '../../images/user icon.png'
+import './SideBar.css'
 
 export default class SideBar extends Component {
     render() {

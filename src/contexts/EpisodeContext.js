@@ -12,6 +12,9 @@ const EpisodeContext = React.createContext({
     clearError: () => { },
     setEpisode: () => {},
     clearEpisode: () => {},
+    addEpisode: () => {},
+    deleteEpisode: () => {},
+    updateEpisode: () => {},
 })
 
 export default EpisodeContext
@@ -39,6 +42,18 @@ export class EpisodeProvider extends Component {
         this.setState(nullEpisode)
     }
 
+    addEpisode = episode => {
+        this.setState({ episode })
+    }
+
+    updateEpisode = episode => {
+        this.setState({ episode })
+    }
+
+    deleteEpisode = () => {
+        this.setState({})
+    }
+
     render() {
         const value = {
             episode: this.state.episode,
@@ -47,6 +62,9 @@ export class EpisodeProvider extends Component {
             clearError: this.clearError,
             setEpisode: this.setEpisode,
             clearEpisode: this.clearEpisode,
+            addEpisode: this.addEpisode,
+            updateEpisode: this.updateEpisode,
+            deleteEpisode: this.deleteEpisode,
         }
         return (
             <EpisodeContext.Provider value={value}>

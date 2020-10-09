@@ -23,11 +23,12 @@ export default class EpisodePage extends Component {
 
     renderEpisode() {
         const { episode } = this.context
-        return <>
-            <div className='EpisodePage__image' style={{backgroundImage: `url(${episode.image})`}}/>
+        return (<>
+            {/* <div className='EpisodePage__image' style={{backgroundImage: `url(${episode.image})`}}/> */}
             <h2>{episode.title}</h2>
             <EpisodeContent episode={episode} />
         </>
+        )
     }
 
     render() {
@@ -40,10 +41,11 @@ export default class EpisodePage extends Component {
         } else if (!episode.id) {
             content = <div className='loading' />
         } else {
-            content = this.renderEpisode
+            content = this.renderEpisode()
         }
-        return (
+        return (<>
             {content}
+            </>
         )
     }
 }

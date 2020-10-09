@@ -4,7 +4,11 @@ import EpisodeListContext from '../../contexts/EpisodeListContext'
 // import PrivateRoute from '../Utils/PrivateRoute'
 // import PublicOnlyRoute from '../Utils/PublicOnlyRoute'
 import EpisodeListPage from '../../routes/EpisodeListPage/EpisodeListPage'
-// import './App.css'
+import LoginPage from '../../routes/LoginPage/LoginPage'
+import CreatePage from '../../routes/CreatePage/CreatePage'
+import EpisodePage from '../../routes/EpisodePage/EpisodePage'
+import EditPage from '../../routes/EditPage/EditPage';
+import './App.css'
 
 class App extends Component {
   state = { hasError: false }
@@ -21,8 +25,25 @@ class App extends Component {
       <div className='App'>
         <Switch>
           <Route
+            exact
             path={'/'}
             component={EpisodeListPage}
+          />
+          <Route
+            path={'/login'}
+            component={LoginPage}
+          />
+          <Route
+            path={'/create'}
+            component={CreatePage}
+          />
+          <Route
+            path={'/:episode_id'}
+            component={EpisodePage}
+          />
+          <Route
+            path={'/edit'}
+            component={EditPage}
           />
         </Switch>
       </div>
