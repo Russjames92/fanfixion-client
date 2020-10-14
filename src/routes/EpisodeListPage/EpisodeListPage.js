@@ -16,26 +16,27 @@ export default class EpisodeListPage extends Component {
     }
 
     renderEpisodes(episodeList) {
-        // const { episodeList = [] } = this.context
-        console.log('episode list', episodeList)
-        return episodeList.map(episode => 
+        // console.log('from episodeList Page', this.context.episodeList)
+        return episodeList.map(episode =>
             <EpisodePost
                 key={episode.id}
                 episode={episode}
+                episodeList={this.context.episodeList}
             />
         )
     }
 
     render() {
         const { error, episodeList } = this.context
-        console.log('episode list context', this.context)
         return (
-            <div className="EpisodeListPage">
+            <>
                 <NavBar />
-                {error
-                    ? <p classname='red'>There was an error, try again</p>
-                    : this.renderEpisodes(episodeList)}
-            </div>
+                <div className="EpisodeListPage">
+                    {error
+                        ? <p classname='red'>There was an error, try again</p>
+                        : this.renderEpisodes(episodeList)}
+                </div>
+            </>
         )
     }
 }

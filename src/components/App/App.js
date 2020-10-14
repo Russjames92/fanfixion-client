@@ -11,7 +11,9 @@ import EditPage from '../../routes/EditPage/EditPage';
 import './App.css'
 
 class App extends Component {
-  state = { hasError: false }
+  state = {
+    hasError: false,
+  }
 
   static contextType = EpisodeListContext
 
@@ -38,11 +40,13 @@ class App extends Component {
             component={CreatePage}
           />
           <Route
+            exact
             path={'/:episode_id'}
             component={EpisodePage}
           />
           <Route
-            path={'/edit'}
+            exact
+            path={'/edit-page/:episode_id'}
             component={EditPage}
           />
         </Switch>

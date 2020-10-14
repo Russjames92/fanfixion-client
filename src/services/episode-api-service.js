@@ -45,18 +45,18 @@ const EpisodeApiService = {
             )
     },
 
-    deleteEpisode(episodeId, userId) {
+    deleteEpisode(episodeId) {
         return fetch(`${config.API_ENDPOINT}/episodes/${episodeId}`, {
             method: 'DELETE',
         })
         .then(res =>
             (!res.ok)
-            ? res.json().then(e => Promise.reject(e))
-            : res.json()
-        )
+            ? (e => Promise.reject(e))
+            : Promise.resolve
+        )   
     },
 
-    updateEpisode(episodeId, userId, title, content, image) {
+    updateEpisode(episodeId, title, content, image) {
         return fetch(`${config.API_ENDPOINT}/episodes/${episodeId}`, {
             method: 'PATCH',
             headers: {
@@ -65,7 +65,7 @@ const EpisodeApiService = {
             },
             body: JSON.stringify({
                 episode_id: episodeId,
-                user_id: userId,
+                // user_id: userId,
                 title,
                 content,
                 image,
@@ -74,7 +74,7 @@ const EpisodeApiService = {
         .then(res =>
             (!res.ok)
             ? res.json().then(e => Promise.reject(e))
-            : res.json()
+            : Promise.resolve
         )
     },
 }

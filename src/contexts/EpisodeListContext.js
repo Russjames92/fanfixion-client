@@ -29,6 +29,17 @@ export class EpisodeListProvider extends Component {
         this.setState({ error: null })
     }
 
+    removeEpisode = epId => {
+        console.log('from remove Episode', epId)
+        const newArry = this.state.episodeList.filter(episode => episode.id !== epId)
+        console.log(newArry)
+        this.setState({
+            episodeList: newArry
+        })
+        // remove episode based on id
+        // reconstruct array without episode
+    }
+
     render() {
         const value = {
             episodeList: this.state.episodeList,
@@ -36,9 +47,12 @@ export class EpisodeListProvider extends Component {
             setError: this.setError,
             clearError: this.clearError,
             setEpisodeList: this.setEpisodeList,
+            removeEpisode: this.removeEpisode,
         }
         return (
-            <EpisodeListContext.Provider value={value}>
+            <EpisodeListContext.Provider 
+                value={value}
+            >
                 {this.props.children}
             </EpisodeListContext.Provider>
         )

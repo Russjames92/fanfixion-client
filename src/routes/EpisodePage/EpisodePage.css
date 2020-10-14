@@ -1,0 +1,26 @@
+.EpisodePage {
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    color: white;
+}
+
+.ep-title {
+    font-size: 40px;
+    color: #e1e400;
+    text-transform: uppercase;
+}
+
+.ep-content {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 75px;
+}
+
+.EpisodePage__image {
+    margin-top: 120px;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

@@ -1,73 +1,75 @@
-nav {
-    background-color: #010101;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#nav-logo {
-    height: 50px;
-}
-
-#search-form {
-    margin: 0 20px;
-}
-
-#search {
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 10px 0 0 10px;
-    border: none;
-    outline: none;
-    margin: 0;
-}
-
-#search-button {
-    font-size: 20px;
-    padding: 10px;
-    margin: 0;
-    border-radius: 0 10px 10px 0;
-    border: none;
-    outline: none;
-}
-
-#search-icon {
-    height: 20px;
-}
-
-#user-icon {
-    height: 40px;
-    margin-left: 80px;
-}
-
-#nav-links {
-    list-style: none;
-    color: #e1e400;
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-}
-
-#nav-item {
-    margin: 20px;
-}
-
-Link {
-    color: #e1e400;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-hr {
-    color: #e1e400;
-    border: solid #e1e400;
-}
-
-#second-nav-icon {
-    height: 30px;
+@media only screen and (min-width: 1000px) {
+    nav {
+        background-color: #010101;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #nav-logo {
+        height: 50px;
+    }
+    
+    #search-form {
+        margin: 0 20px;
+    }
+    
+    #search {
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px 0 0 10px;
+        border: none;
+        outline: none;
+        margin: 0;
+    }
+    
+    #search-button {
+        font-size: 20px;
+        padding: 10px;
+        margin: 0;
+        border-radius: 0 10px 10px 0;
+        border: none;
+        outline: none;
+    }
+    
+    #search-icon {
+        height: 20px;
+    }
+    
+    #user-icon {
+        height: 40px;
+        margin-left: 80px;
+    }
+    
+    #nav-links {
+        list-style: none;
+        color: #e1e400;
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+    }
+    
+    #nav-item {
+        margin: 20px;
+    }
+    
+    Link {
+        color: #e1e400;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    hr {
+        color: #e1e400;
+        border: solid #e1e400;
+    }
+    
+    #second-nav-icon {
+        height: 30px;
+    }
 }
