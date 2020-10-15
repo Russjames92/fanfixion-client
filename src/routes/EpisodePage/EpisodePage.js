@@ -28,10 +28,11 @@ export default class EpisodePage extends Component {
         return (
             <>
                 <NavBar />
-                <div className='EpisodePage__image' style={{backgroundImage: `url(${episode.image})`}}/>
-                <div className='EpisodePage'>
-                    <h2 className='ep-title'>{episode.title}</h2>
-                    <p className='ep-content'>{episode.content}</p>
+                <div className='content-wrap'>
+                    <div className='EpisodePage'>
+                        <h2 className='ep-title'>{episode.title}</h2>
+                        <p className='ep-content'>{episode.content}</p>
+                    </div>
                 </div>
             </>
         )
