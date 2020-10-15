@@ -55,6 +55,10 @@
     font-size: 16px;
 }
 
+#user {
+    font-size: 12px;
+}
+
 #post-user-icon {
     height: 40px;
     margin: 20px;
@@ -64,6 +68,7 @@
 
 #post-time {
     color: #8a8a8a;
+    font-size: 10px;
 }
 
 .post-image {

@@ -1,5 +1,9 @@
 .EpisodeListPage {
     margin-top: 210px;
-    /* margin-left: 100px;
-    margin-right: 100px; */
+}
+
+@media only screen and (max-width: 1000px) {
+    .EpisodeListPage {
+        width: 100%;
+    }
 }

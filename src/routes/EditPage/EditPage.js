@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import NavBar from '../../components/NavBar/NavBar'
 import EditForm from '../../components/EditForm/EditForm'
-// import userImage from '../../images/user icon.png'
-// import utilityIcon from '../../images/three dot icon.png'
 import EpisodeContext from '../../contexts/EpisodeContext'
 import EpisodeApiService from '../../services/episode-api-service'
 import './EditPage.css'
@@ -39,9 +37,6 @@ export default class EditPage extends Component {
                         <div className="post-header">
                             <div className="post-header-left">
                                 <img id="post-user-icon" src={siteLogo} alt="user-pic" />
-                                <div className="header-text">
-                                    <h5 id="user">fanFIXion</h5>
-                                </div>
                             </div>
                         </div>
 

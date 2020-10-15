@@ -1,77 +1,159 @@
-.EditPage {
-    margin-top: 210px;
-    margin-left: 300px;
-    margin-right: 300px;
+@media only screen and (max-width: 1000px) {
+    .EditPage {
+        margin-top: 210px;
+        width: 100%;
+    }
+
+    .post-cont {
+        background-color: #262626;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .post-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .post-header-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .post-header-right {
+        margin-right: 20px;
+    }
+    
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    
+    #post-user-icon {
+        height: 40px;
+        margin: 20px;
+        border: solid #e1e400;
+        border-radius: 50%;
+    }
+    
+    .create-form-cont {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .create-post {
+        display: flex;
+        flex-direction: column;
+        /* padding: 10px; */
+    }
+    
+    .title, .content, .create-post-submit {
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+    }
+    
+    .create-post-submit {
+        background-color: #141414;
+        color: #e1e400;
+        /* border: solid #e1e400; */
+        cursor: pointer;
+    }
+    
+    .content {
+        height: 500px;
+    }
 }
 
-.post-cont {
-    background-color: #262626;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.post-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.post-header-left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.post-header-right {
-    margin-right: 20px;
-}
-
-.header-text {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-}
-
-#post-user-icon {
-    height: 40px;
-    margin: 20px;
-    border: solid #e1e400;
-    border-radius: 50%;
-}
-
-.create-form-cont {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.create-post {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-.title, .content, .create-post-submit {
-    font-size: 20px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-}
-
-.create-post-submit {
-    background-color: #141414;
-    color: #e1e400;
-    /* border: solid #e1e400; */
-    cursor: pointer;
-}
-
-.content {
-    height: 500px;
+@media only screen and (min-width: 1000px) {
+    .EditPage {
+        margin-top: 210px;
+        min-width: 850px;
+        /* margin-left: 300px;
+        margin-right: 300px; */
+    }
+    
+    .post-cont {
+        background-color: #262626;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .post-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .post-header-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .post-header-right {
+        margin-right: 20px;
+    }
+    
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    
+    #post-user-icon {
+        height: 40px;
+        margin: 20px;
+        border: solid #e1e400;
+        border-radius: 50%;
+    }
+    
+    .create-form-cont {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .create-post {
+        display: flex;
+        flex-direction: column;
+        /* padding: 10px; */
+    }
+    
+    .title, .content, .create-post-submit {
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+    }
+    
+    .create-post-submit {
+        background-color: #141414;
+        color: #e1e400;
+        /* border: solid #e1e400; */
+        cursor: pointer;
+    }
+    
+    .content {
+        height: 500px;
+    }
 }

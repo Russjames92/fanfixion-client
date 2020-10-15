@@ -17,7 +17,6 @@ export class EpisodeListProvider extends Component {
     };
 
     setEpisodeList = episodeList => {
-        // console.log('setEpisodeList is called', episodeList)
         this.setState({ episodeList })
     }
 
@@ -37,8 +36,6 @@ export class EpisodeListProvider extends Component {
         this.setState({
             episodeList: newArry
         })
-        // remove episode based on id
-        // reconstruct array without episode
     }
 
     componentDidMount() {

@@ -2,6 +2,12 @@ body {
     background-color: #1a1a1a;
 }
 
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 textarea {
     resize: none;
     white-space: pre-line;
