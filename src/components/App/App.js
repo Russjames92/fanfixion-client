@@ -4,11 +4,12 @@ import EpisodeListContext from '../../contexts/EpisodeListContext'
 // import PrivateRoute from '../Utils/PrivateRoute'
 // import PublicOnlyRoute from '../Utils/PublicOnlyRoute'
 import EpisodeListPage from '../../routes/EpisodeListPage/EpisodeListPage'
-import LoginPage from '../../routes/LoginPage/LoginPage'
+// import LoginPage from '../../routes/LoginPage/LoginPage'
 import CreatePage from '../../routes/CreatePage/CreatePage'
 import EpisodePage from '../../routes/EpisodePage/EpisodePage'
 import EditPage from '../../routes/EditPage/EditPage';
 import './App.css'
+import LandingPage from '../LandingPage/LandingPage';
 
 class App extends Component {
   state = {
@@ -29,11 +30,11 @@ class App extends Component {
           <Route
             exact
             path={'/'}
-            component={EpisodeListPage}
+            component={LandingPage}
           />
           <Route
-            path={'/login'}
-            component={LoginPage}
+            path={'/home'}
+            component={EpisodeListPage}
           />
           <Route
             path={'/create'}

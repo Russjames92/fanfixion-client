@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import NavBar from '../../components/NavBar/NavBar'
 import EditForm from '../../components/EditForm/EditForm'
-import userImage from '../../images/user icon.png'
-import utilityIcon from '../../images/three dot icon.png'
+// import userImage from '../../images/user icon.png'
+// import utilityIcon from '../../images/three dot icon.png'
 import EpisodeContext from '../../contexts/EpisodeContext'
 import EpisodeApiService from '../../services/episode-api-service'
 import './EditPage.css'
+import siteLogo from '../../images/short logo.png'
 
 export default class EditPage extends Component {
     static defaultProps = {
@@ -40,14 +41,15 @@ export default class EditPage extends Component {
                     <div className="post-cont">
                         <div className="post-header">
                             <div className="post-header-left">
-                                <img id="post-user-icon" src={userImage} alt="user-pic" />
+                                {/* <img id="post-user-icon" src={userImage} alt="user-pic" /> */}
+                                <img id="post-user-icon" src={siteLogo} alt="user-pic" />
                                 <div className="header-text">
-                                    <h5 id="user">USERNAME</h5>
+                                    <h5 id="user">fanFIXion</h5>
                                 </div>
                             </div>
-                            <div className="post-header-right">
+                            {/* <div className="post-header-right">
                                 <img id="post-action-icon" src={utilityIcon} alt="three-dot-icon" />
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className="create-form-cont">

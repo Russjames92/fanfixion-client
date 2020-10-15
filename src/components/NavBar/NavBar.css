@@ -1,18 +1,120 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #141414;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-logo {
+    height: 50px;
+    margin: 20px;
+}
+
+.header-break {
+    width: 80%;
+    border: none;
+    height: 2px;
+    background-color: #222222;
+}
+
+#search-form {
+    margin: 0 20px;
+}
+
+#search {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    outline: none;
+    margin: 0;
+}
+
+#search-button {
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    outline: none;
+}
+
+#search-icon {
+    height: 20px;
+}
+
+#user-icon {
+    height: 40px;
+    margin-left: 80px;
+}
+
+#nav-links {
+    list-style: none;
+    color: #e1e400;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    align-items: center;
+    font-weight: bold;
+}
+
+#nav-item {
+    margin: 20px;
+}
+
+Link {
+    color: #e1e400;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-break {
+    background-color: #e1e400;
+    border: none;
+    width: 2px;
+    height: 40px;
+}
+
+#second-nav-icon {
+    height: 30px;
+}
+
 @media only screen and (min-width: 1000px) {
     nav {
-        background-color: #010101;
+        background-color: #141414;
         position: fixed;
         top: 0;
         width: 100%;
         overflow: hidden;
         padding: 20px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     
     #nav-logo {
         height: 50px;
+        margin: 20px;
+    }
+
+    .header-break {
+        width: 80%;
+        border: none;
+        height: 2px;
+        background-color: #222222;
     }
     
     #search-form {
@@ -52,6 +154,8 @@
         display: flex;
         flex-direction: row;
         font-size: 20px;
+        align-items: center;
+        font-weight: bold;
     }
     
     #nav-item {
@@ -64,9 +168,11 @@
         cursor: pointer;
     }
     
-    hr {
-        color: #e1e400;
-        border: solid #e1e400;
+    .nav-break {
+        background-color: #e1e400;
+        border: none;
+        width: 2px;
+        height: 40px;
     }
     
     #second-nav-icon {
