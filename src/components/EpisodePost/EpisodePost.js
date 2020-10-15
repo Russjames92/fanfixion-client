@@ -10,9 +10,6 @@ import EpisodeListContext from '../../contexts/EpisodeListContext'
 import siteLogo from '../../images/short logo.png'
 
 export default class EpisodePost extends Component {
-    state = {
-        episode: this.props.episode,
-    }
 
     static contextType = EpisodeListContext
 
@@ -48,7 +45,7 @@ export default class EpisodePost extends Component {
                                 to={{
                                     pathname: `/edit-page/${episode.id}`,
                                     state: {
-                                        episodeList: this.props.episodeList
+                                        episodeList: this.context.episodeList
                                     }
                                 }}
                                 id="post-action-icon"

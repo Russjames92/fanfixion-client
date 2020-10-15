@@ -5,12 +5,13 @@ import { Redirect } from 'react-router-dom'
 
 function RRender() {
     return (
-        <Redirect push to='/' />
+        <Redirect push to='/home' />
     )
 }
 
 export default class EditForm extends Component {
     state = {
+        id: '',
         title: '',
         content: '',
         image: '',
@@ -30,6 +31,7 @@ export default class EditForm extends Component {
         }
 
         this.setState({
+            id: epId,
             title: episode.title,
             content: episode.content,
             image: episode.image,
@@ -39,36 +41,17 @@ export default class EditForm extends Component {
 
     handleSubmit = ev => {
         ev.preventDefault()
-        const episode = this.context
-        const { title, content, image } = ev.target
-        if (window.confirm(`Save changes to ${episode.episode.title}?`)) {
-            EpisodeApiService.updateEpisode(episode.episode.id, title.value, content.value, image.value)
+        if (window.confirm(`Save changes to ${this.state.title}?`)) {
+            EpisodeApiService.updateEpisode(this.state.id, this.state.title, this.state.content, this.state.image)
                 .then(this.context.updateEpisode)
-                // .then(() => {
-                //     title.value = ''
-                //     content.value = ''
-                //     image.value = ''
-                // })
                 .then(this.setState({ redirect: true }))
                 .catch(this.context.setError)
         }
     }
 
-    changeTitle = ev => {
+    handleChange = ev => {
         this.setState({
-            title: ev.target.value,
-        })
-    }
-
-    changeContent = ev => {
-        this.setState({
-            content: ev.target.value,
-        })
-    }
-
-    changeImage = ev => {
-        this.setState({
-            image: ev.target.value,
+            [ ev.target.name ]: ev.target.value
         })
     }
 
@@ -85,20 +68,20 @@ export default class EditForm extends Component {
                     name="title"
                     className="title"
                     value={this.state.title}
-                    onChange={this.changeTitle}
+                    onChange={this.handleChange}
                 />
                 <textarea
                     type="text"
                     name="content"
                     className="content"
                     value={this.state.content}
-                    onChange={this.changeContent}
+                    onChange={this.handleChange}
                 />
                 <input
                     name="image"
                     className="image"
                     value={this.state.image}
-                    onChange={this.changeImage}
+                    onChange={this.handleChange}
                 />
                 <button
                     type="submit"

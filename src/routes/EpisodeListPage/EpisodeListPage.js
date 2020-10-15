@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import EpisodeListContext from '../../contexts/EpisodeListContext'
-import EpisodeApiService from '../../services/episode-api-service'
+// import EpisodeApiService from '../../services/episode-api-service'
 import EpisodePost from '../../components/EpisodePost/EpisodePost'
 import NavBar from '../../components/NavBar/NavBar'
 import './EpisodeListPage.css'
@@ -10,9 +10,9 @@ export default class EpisodeListPage extends Component {
 
     componentDidMount() {
         this.context.clearError()
-        EpisodeApiService.getEpisodes()
-            .then(this.context.setEpisodeList)
-            .catch(this.context.setError)
+        // EpisodeApiService.getEpisodes()
+        //     .then(this.context.setEpisodeList)
+        //     .catch(this.context.setError)
     }
 
     renderEpisodes(episodeList) {
@@ -21,7 +21,7 @@ export default class EpisodeListPage extends Component {
             <EpisodePost
                 key={episode.id}
                 episode={episode}
-                episodeList={this.context.episodeList}
+                // episodeList={this.context.episodeList}
             />
         )
     }

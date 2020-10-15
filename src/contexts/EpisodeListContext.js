@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import EpisodeApiService from '../services/episode-api-service'
 
 const EpisodeListContext = React.createContext({
     episodeList: [],
@@ -38,6 +39,12 @@ export class EpisodeListProvider extends Component {
         })
         // remove episode based on id
         // reconstruct array without episode
+    }
+
+    componentDidMount() {
+        EpisodeApiService.getEpisodes()
+            .then(this.setEpisodeList)
+            .catch(this.setError)
     }
 
     render() {
