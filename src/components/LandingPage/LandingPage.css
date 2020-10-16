@@ -31,14 +31,14 @@
 
 .welcome-container {
     display: flex;
-    min-width: 80%;
+    width: 80%;
     flex-direction: column;
     align-items: center;
     background-color: #262626;
     /* border: solid white; */
     border-radius: 10px;
     padding: 10px;
-    margin:30px 150px;
+    margin:30px 0;
 }
 
 .footer {
@@ -71,7 +71,7 @@
 .welcome-body {
     color: white;
     font-size: 20px;
-    margin: 20px 50px;
+    margin: 20px 20px;
     text-align: center;
 }
 
