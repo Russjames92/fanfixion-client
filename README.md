@@ -21,7 +21,7 @@ much like content-creators do on sites like YouTube. The sky is the limit for th
 [fanFIXion](https://fanfixion-client.vercel.app/)
 
 
-## App Screenshots
+## Desktop Screenshots
 
 ### Landing Page
 ![landing-page](app-ss/sshot-lp.png)
@@ -41,6 +41,27 @@ much like content-creators do on sites like YouTube. The sky is the limit for th
 ![update-page](app-ss/sshot-ue1.png)
 
 ![update-page](app-ss/sshot-ue2.png)
+
+## Mobile Screenshots
+
+### Landing Page
+![landing-page](app-ss/a-sshot-lp.png)
+
+### Home/Episode Feed
+![home](app-ss/a-sshot-h.png)
+
+### Episode Page
+![episode-page](app-ss/a-sshot-e.png)
+
+### Create Page
+![create-page](app-ss/a-sshot-ce1.png)
+
+![create-page](app-ss/a-sshot-ce2.png)
+
+### Update Page
+![update-page](app-ss/a-sshot-ue1.png)
+
+![update-page](app-ss/a-sshot-ue2.png)
 
 
 ## App Summary
