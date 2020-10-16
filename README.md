@@ -49,7 +49,7 @@ home page. Once in the home page the user can, at this stage of the app, do four
 - They can create and episode by clicking the 'CREATE' link in the navigation bar.
     - The user will be given fields for an Episode Title, Content, and an Image URL.
 - They can update/edit a desired episode by clicking on the associated 'EDIT' link.
-- And finally they can remove a desired episode by clicking on the associated 'DELETE link.
+- And finally they can remove a desired episode by clicking on the associated 'DELETE' link.
 
 ## Codebase Details
 This App was built with create-react-app
