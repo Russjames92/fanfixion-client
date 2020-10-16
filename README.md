@@ -21,6 +21,28 @@ much like content-creators do on sites like YouTube. The sky is the limit for th
 [fanFIXion](https://fanfixion-client.vercel.app/)
 
 
+## App Summary
+As a user, one is able to GET STARTED and view the episode feed of various fictional stories from the
+home page. Once in the home page the user can, at this stage of the app, do four basic things.
+- They can open a desired episode by clicking on the associated 'SHOW EPISODE' link.
+- They can create and episode by clicking the 'CREATE' link in the navigation bar.
+    - The user will be given fields for an Episode Title, Content, and an Image URL.
+- They can update/edit a desired episode by clicking on the associated 'EDIT' link.
+- And finally they can remove a desired episode by clicking on the associated 'DELETE' link.
+
+## Codebase Details
+This App was built with create-react-app
+
+### Coding Used:
+- [React](https://reactjs.org/)
+- [Javascript](https://javascript.info/)
+- [CSS](https://devdocs.io/css/)
+- [HTML](https://devdocs.io/html/)
+
+#### To View The Server Click The Link Below
+[fanFIXion Server Repo](https://github.com/Russjames92/fanfixion-server)
+
+
 ## Desktop Screenshots
 
 ### Landing Page
@@ -62,25 +84,3 @@ much like content-creators do on sites like YouTube. The sky is the limit for th
 ![update-page](app-ss/a-sshot-ue1.png)
 
 ![update-page](app-ss/a-sshot-ue2.png)
-
-
-## App Summary
-As a user, one is able to GET STARTED and view the episode feed of various fictional stories from the
-home page. Once in the home page the user can, at this stage of the app, do four basic things.
-- They can open a desired episode by clicking on the associated 'SHOW EPISODE' link.
-- They can create and episode by clicking the 'CREATE' link in the navigation bar.
-    - The user will be given fields for an Episode Title, Content, and an Image URL.
-- They can update/edit a desired episode by clicking on the associated 'EDIT' link.
-- And finally they can remove a desired episode by clicking on the associated 'DELETE' link.
-
-## Codebase Details
-This App was built with create-react-app
-
-### Coding Used:
-- [React](https://reactjs.org/)
-- [Javascript](https://javascript.info/)
-- [CSS](https://devdocs.io/css/)
-- [HTML](https://devdocs.io/html/)
-
-#### To View The Server Click The Link Below
-[fanFIXion Server Repo](https://github.com/Russjames92/fanfixion-server)
