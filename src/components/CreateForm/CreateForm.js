@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom'
 
 function RRender() {
     return (
-        <Redirect push to='/' />
+        <Redirect push to='/home' />
     )
 }
 

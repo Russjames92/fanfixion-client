@@ -1,68 +1,59 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#fanFIXion
 
-## Available Scripts
+The name of my app is fanFIXion.
+This is a fun platform where a user can become a member in a world of make-believe. Really, many worlds...
+fanFIXion is not just a platform to connect with a community of like-minded individuals around a particular hobby-based interest, although I want there to be plenty of that.
+It is an open source digital space that is actively being evolved and created by the user.
 
-In the project directory, you can run:
 
-### `npm start`
+###Fiction stories have captivated society as long as language has existed.
+With favorite authors and genres, people have found a place in fiction to escape, and for a few minutes or hours, live in another world. fanFIXion takes that feeling to the next level for it's users as now they'll be able to create whole universes that involve their favorite characters from any book, movie, cartoon, or TV show. Not only that, but they can get their friends in on the action. Eventually I see a platform that transforms the writing industry and allows an aspiring author to gain a following
+much like content-creators do on sites like YouTube. The sky is the limit for the user. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##Some Future Goals For fanFIXion
+- You'll be able to follow different fictional universes and stay up to date on the latest developments in a favorite story written by a friend or a writer you follow.
+- Collabarote as users can create fantastical worlds and storylines of your favorite fictional characters together.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+##The imagination possibilities are endless!
 
-### `npm test`
+###Be Sure To Check Out The App Using The Link Below!
+[fanFIXion](https://fanfixion-client.vercel.app/)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+##App Screenshots
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+###Landing Page
+![landing-page](app-ss/sshot-lp.png)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+###Home/Episode Feed
+![home](app-ss/sshot-h.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+###Episode Page
+![episode-page](app-ss/sshot-e.png)
 
-### `npm run eject`
+###Create Page
+![create-page](app-ss/sshot-ce1.png)
+![create-page](app-ss/sshot-ce2.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+###Update Page
+![update-page](app-ss/sshot-ue1.png))
+![update-page](app-ss/sshot-ue2.png))
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+##App Summary
+As a user, one is able to GET STARTED and view the episode feed of various fictional stories from the
+home page. Once in the home page the user can, at this stage of the app, do four basic things.
+- They can open a desired episode by clicking on the associated 'SHOW EPISODE' link.
+- They can create and episode by clicking the 'CREATE' link in the navigation bar.
+    - The user will be given fields for an Episode Title, Content, and an Image URL.
+- They can update/edit a desired episode by clicking on the associated 'EDIT' link.
+- And finally they can remove a desired episode by clicking on the associated 'DELETE link.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+##Codebase Details
+This App was built with create-react-app
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+###Coding Used:
+- Javascript
+- CSS
+- HTML
+- React

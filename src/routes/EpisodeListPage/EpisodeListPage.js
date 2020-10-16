@@ -27,7 +27,7 @@ export default class EpisodeListPage extends Component {
                 <NavBar />
                 <div className="EpisodeListPage">
                     {error
-                        ? <p classname='red'>There was an error, try again</p>
+                        ? <p className='red'>There was an error, try again</p>
                         : this.renderEpisodes(episodeList)}
                 </div>
             </>

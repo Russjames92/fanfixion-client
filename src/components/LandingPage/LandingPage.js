@@ -13,7 +13,7 @@ export default class LandingPage extends Component {
                         <img id="long-logo" src={logo} alt="fanFIXion" />
                     </div>
                     <div className="welcome-container">
-                        <h4 className="welcome-header">WELCOME TO fanFixion!</h4>
+                        <h4 className="welcome-header">WELCOME TO fanFIXion!</h4>
                         <p className="welcome-body">
                             Fiction stories have captivated society as long as language has existed.
                             With favorite authors and genres, people have found a place in fiction to escape, and for a few minutes or hours, live

@@ -102,7 +102,7 @@
     }
     
     #long-logo {
-        height: 200px;
+        height: 150px;
         margin-top: 10px;
     }
     
@@ -129,7 +129,7 @@
         /* border: solid white; */
         border-radius: 10px;
         padding: 10px 50px;
-        margin:30px 150px;
+        margin:30px 300px;
     }
     
     .footer {
@@ -161,7 +161,7 @@
 
     .welcome-body {
         color: white;
-        font-size: 30px;
+        font-size: 20px;
         margin: 20px 50px;
         text-align: center;
     }
