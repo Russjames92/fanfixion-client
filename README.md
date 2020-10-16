@@ -1,4 +1,5 @@
 # [fanFIXion](https://fanfixion-client.vercel.app/)
+#### Created By: Russell Champlain
 
 The name of my app is fanFIXion.
 This is a fun platform where a user can become a member in a world of make-believe. Really, many worlds...
