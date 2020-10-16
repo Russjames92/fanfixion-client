@@ -37,9 +37,9 @@ much like content-creators do on sites like YouTube. The sky is the limit for th
 ![create-page](app-ss/sshot-ce2.png)
 
 ### Update Page
-![update-page](app-ss/sshot-ue1.png))
+![update-page](app-ss/sshot-ue1.png)
 
-![update-page](app-ss/sshot-ue2.png))
+![update-page](app-ss/sshot-ue2.png)
 
 
 ## App Summary
