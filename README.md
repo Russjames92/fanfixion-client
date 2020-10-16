@@ -55,7 +55,10 @@ home page. Once in the home page the user can, at this stage of the app, do four
 This App was built with create-react-app
 
 ### Coding Used:
-- Javascript
-- CSS
-- HTML
-- React
+- [React](https://reactjs.org/)
+- [Javascript](https://javascript.info/)
+- [CSS](https://devdocs.io/css/)
+- [HTML](https://devdocs.io/html/)
+
+#### To View The Server Click The Link Below
+[fanFIXion Server Repo](https://github.com/Russjames92/fanfixion-server)
