@@ -1,18 +1,13 @@
 import React, { Component } from 'react'
 import EpisodeApiService from '../../services/episode-api-service'
 import EpisodeContext from '../../contexts/EpisodeContext'
-import { Redirect } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 
-function RRender() {
-    return (
-        <Redirect push to='/home' />
-    )
-}
-
-export default class CreateForm extends Component {
+class CreateForm extends Component {
     state = {
+        title: "",
+        content: "",
         image: "https://loremflickr.com/750/300/city?random=1",
-        redirect: null,
     }
 
     static contextType = EpisodeContext
@@ -20,7 +15,6 @@ export default class CreateForm extends Component {
     handleSubmit = ev => {
         ev.preventDefault()
         const { title, content, image } = ev.target
-        
 
         EpisodeApiService.postEpisode(title.value, content.value, image.value)
             .then(this.context.addEpisode)
@@ -29,22 +23,17 @@ export default class CreateForm extends Component {
                 content.value = ''
                 image.value = ''
             })
-            .then(this.setState({redirect: true}))
+            .then(setTimeout(() => this.props.history.push("/home"), 500))
             .catch(this.context.setError)
     }
 
-    changeImage = ev => {
+    handleChange = ev => {
         this.setState({
-            image: ev.target.value,
+            [ev.target.name]: ev.target.value
         })
     }
 
     render() {
-        if(this.state.redirect === true) {
-            return (
-                <RRender />
-            )
-        }
         return (
             <form onSubmit={this.handleSubmit} action="submit" className="create-post">
                 <input
@@ -52,12 +41,14 @@ export default class CreateForm extends Component {
                     name="title"
                     className="title"
                     placeholder="EPISODE TITLE"
+                    onChange={this.handleChange}
                 />
                 <textarea
                     type="text"
                     name="content"
                     className="content"
                     placeholder="EPISODE CONTENT"
+                    onChange={this.handleChange}
                 >
                 </textarea>
                 <h6
@@ -67,7 +58,7 @@ export default class CreateForm extends Component {
                     name="image"
                     className="image"
                     value={this.state.image}
-                    onChange={this.changeImage}
+                    onChange={this.handleChange}
                 />
                 <button
                     type="submit"
@@ -77,3 +68,5 @@ export default class CreateForm extends Component {
         )
     }
 }
+
+export default withRouter(CreateForm);

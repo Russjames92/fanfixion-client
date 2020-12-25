@@ -4,9 +4,9 @@ import EpisodeApiService from '../services/episode-api-service'
 const EpisodeListContext = React.createContext({
     episodeList: [],
     error: null,
-    setError: () => {},
-    clearError: () => {},
-    setEpisodeList: () => {},
+    setError: () => { },
+    clearError: () => { },
+    setEpisodeList: () => { },
 })
 export default EpisodeListContext
 
@@ -54,7 +54,7 @@ export class EpisodeListProvider extends Component {
             removeEpisode: this.removeEpisode,
         }
         return (
-            <EpisodeListContext.Provider 
+            <EpisodeListContext.Provider
                 value={value}
             >
                 {this.props.children}

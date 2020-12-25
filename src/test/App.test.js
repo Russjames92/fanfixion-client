@@ -13,7 +13,7 @@ import CreatePage from '../routes/CreatePage/CreatePage'
 import EditPage from '../routes/EditPage/EditPage'
 import EpisodeListPage from '../routes/EpisodeListPage/EpisodeListPage'
 import EpisodePage from '../routes/EpisodePage/EpisodePage'
-import LoginPage from '../routes/LoginPage/LoginPage'
+
 
 describe('basic test to make sure each component renders without crashing', () => {
   it('renders App component without crashing', () => {
@@ -149,21 +149,6 @@ describe('basic test to make sure each component renders without crashing', () =
         <EpisodeListProvider>
           <EpisodeProvider>
             <EpisodePage />
-          </EpisodeProvider>
-        </EpisodeListProvider>
-      </BrowserRouter>,
-      div
-    )
-    ReactDOM.unmountComponentAtNode(div)
-  })
-
-  it('renders LoginPage route without crashing', () => {
-    const div = document.createElement('div')
-    ReactDOM.render(
-      <BrowserRouter>
-        <EpisodeListProvider>
-          <EpisodeProvider>
-            <LoginPage />
           </EpisodeProvider>
         </EpisodeListProvider>
       </BrowserRouter>,
