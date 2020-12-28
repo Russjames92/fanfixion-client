@@ -7,6 +7,7 @@ const EpisodeListContext = React.createContext({
     setError: () => { },
     clearError: () => { },
     setEpisodeList: () => { },
+    addEpisode: () => { }
 })
 export default EpisodeListContext
 
@@ -15,6 +16,12 @@ export class EpisodeListProvider extends Component {
         episodeList: [],
         error: null,
     };
+
+    addEpisode = (episode) => {
+        this.setState({
+            episodeList: [...this.state.episodeList, episode]
+        })
+    }
 
     setEpisodeList = episodeList => {
         this.setState({ episodeList })
@@ -52,6 +59,7 @@ export class EpisodeListProvider extends Component {
             clearError: this.clearError,
             setEpisodeList: this.setEpisodeList,
             removeEpisode: this.removeEpisode,
+            addEpisode: this.addEpisode,
         }
         return (
             <EpisodeListContext.Provider
